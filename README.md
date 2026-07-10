@@ -1,41 +1,26 @@
 <div align=center>
-  <h1>geo-local-skill</h1>
-  <p><em>Part of the BrandVirality open-source ecosystem — AI visibility & GEO tools.</em></p>
-  <p><a href=LICENSE><img src='https://img.shields.io/badge/license-MIT-blue.svg'></a></p>
-  <p>by BrandVirality — <strong>SaaS for AI visibility.</strong><br>Author: Jose Zuma</p>
+  <h1>📍 GEO Local Skill</h1>
+  <p><em>Agent skill for local businesses: optimizes Google Business Profile + local schema for AI discovery.</em></p>
+  <p><a href=LICENSE><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt=License></a>
+  <p>by <a href=https://brandvirality.com>BrandVirality</a><br>
+  <strong>Author:</strong> <a href=https://github.com/josezuma>Jose Zuma</a></p>
 </div>
-
----
 
 ## Quick Start
 
 ```bash
-git clone https://github.com/josezuma/geo-local-skill.git
-cd geo-local-skill
+pip install requests
+python3 scripts/audit_local.py "Business Name" "City, State"
 ```
 
+## Checks
+| Check | What it verifies |
+|-------|-----------------|
+| GBP completeness | Name, address, phone, hours, photos |
+| LocalBusiness schema | @type: LocalBusiness with geo coordinates |
+| NAP consistency | Name, Address, Phone across web |
+| Review schema | AggregateRating for citation potential |
+| Maps citations | Presence in Google Maps, Apple Maps |
+
 ## Related
-
-- [awesome-ai-visibility](https://github.com/josezuma/awesome-ai-visibility)
-- [ai-crawlers](https://github.com/josezuma/ai-crawlers)
-- [geo-audit-skill](https://github.com/josezuma/geo-audit-skill)
-- [schema-for-ai](https://github.com/josezuma/schema-for-ai)
-- [repo-visibility-skill](https://github.com/josezuma/repo-visibility-skill)
-- [llmstxt-gen](https://github.com/josezuma/llmstxt-gen)
-- [marketing-skills](https://github.com/josezuma/marketing-skills)
-- [geo-prompts](https://github.com/josezuma/geo-prompts)
-- [geo-watch](https://github.com/josezuma/geo-watch)
-- [mcp-geo](https://github.com/josezuma/mcp-geo)
-- [geo-prompt-optimizer](https://github.com/josezuma/geo-prompt-optimizer)
-- [llm-citation-scanner](https://github.com/josezuma/llm-citation-scanner)
-- [geo-benchmarks](https://github.com/josezuma/geo-benchmarks)
-- [eeat-analyzer](https://github.com/josezuma/eeat-analyzer)
-- [geo-content-template](https://github.com/josezuma/geo-content-template)
-- [structured-data-tester](https://github.com/josezuma/structured-data-tester)
-- [competitor-geo-watch](https://github.com/josezuma/competitor-geo-watch)
-- [geo-local-skill](https://github.com/josezuma/geo-local-skill)
-- [ai-search-share-of-voice](https://github.com/josezuma/ai-search-share-of-voice)
-
-## License
-
-MIT © 2026 Jose Zuma / BrandVirality
+geo-audit-skill, schema-for-ai, ai-crawlers, awesome-ai-visibility
